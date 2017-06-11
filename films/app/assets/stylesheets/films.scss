@@ -1,12 +1,10 @@
 // Place all the styles related to the Films controller here.
-$color: #990000 !default;
-
-#main {
-  color: $color;
-}
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$color-red: #990000;
+$color-grey: #999;
+$font-family-source-sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-oswald: 'Oswald', Helvetica, Arial, sans-serif;
 
 *,
 *::before,
@@ -16,7 +14,7 @@ $color: #990000 !default;
 
 html {
   box-sizing: inherit;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: $font-family-source-sans;
   font-size: 20px;
   line-height: 1.35;
   height: 100%;
@@ -33,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-family: $font-family-oswald;
   // font-weight: 700;
   line-height: 1.1;
 }
@@ -86,10 +84,11 @@ article > header {
 .hero-title-container > .hero-title {
   font-size: 3rem;
   margin: 2rem 0 0;
+  color: $color-red;
 }
 
 .hero-title-container > .hero-tagline {
-  color: #999;
+  color: $color-grey;
   margin: 0.25rem 0;
 }
 
@@ -101,12 +100,13 @@ article > header {
 
 .article-title > h2 {
     font-size: 1.2em;
-    color: #999;
+    color: $color-grey;
 }
 
 .article-title > h1 {
     font-size: 2rem;
     margin-bottom: 0;
+    color: $color-red;
 }
 
 // This mixin provides a fancier clearfix than using the overflow property!
