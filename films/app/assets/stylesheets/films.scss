@@ -1,6 +1,12 @@
 // Place all the styles related to the Films controller here.
+$color: #990000 !default;
+
+#main {
+  color: $color;
+}
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 
 *,
 *::before,
@@ -80,7 +86,6 @@ article > header {
 .hero-title-container > .hero-title {
   font-size: 3rem;
   margin: 2rem 0 0;
-  color: #990000;
 }
 
 .hero-title-container > .hero-tagline {
@@ -102,7 +107,6 @@ article > header {
 .article-title > h1 {
     font-size: 2rem;
     margin-bottom: 0;
-    color: #990000;
 }
 
 // This mixin provides a fancier clearfix than using the overflow property!
