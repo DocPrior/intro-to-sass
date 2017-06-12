@@ -12,6 +12,14 @@ $font-family-oswald: 'Oswald', Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
 
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 html {
   box-sizing: inherit;
   font: {
@@ -50,7 +58,7 @@ article {
   width: 75%;
   margin: 1rem auto 3rem;
   header {
-    overflow: auto;
+    @include clearfix;
   }
 }
 
@@ -114,10 +122,3 @@ article {
 
 
 // This mixin provides a fancier clearfix than using the overflow property!
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
